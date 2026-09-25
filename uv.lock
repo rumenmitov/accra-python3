@@ -1,0 +1,32 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "accra-language"
+version = "0.1.0"
+source = { git = "https://github.com/rumenmitov/accra-language#d8d8865cea9247e6f55f66cd68c857a6fddd05ee" }
+
+[[package]]
+name = "accra-python3"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "accra-language" },
+    { name = "vermin" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "accra-language", git = "https://github.com/rumenmitov/accra-language" },
+    { name = "vermin", specifier = ">=1.8.0" },
+]
+
+[[package]]
+name = "vermin"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/24/7b/2c1b403f2a844e1acb36694fc336e323df742f7f752edb4188311ad43f9e/vermin-1.8.0.tar.gz", hash = "sha256:3621955ac2a2950175c5b4a9b2fc3bd24bd416da0388893c9eb6971264e4ca1f", size = 99913, upload-time = "2025-11-20T17:29:31.509Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/fd/6d2167767488e162efd01300a679c7f7d913dbb65baa0b15760ebb369854/vermin-1.8.0-py3-none-any.whl", hash = "sha256:6f2b98ad697a16ed3442e81a0f0baabfc38c185b78aaab1b1fecd87bdd6640b8", size = 98030, upload-time = "2025-11-20T17:29:29.931Z" },
+]

@@ -1,0 +1,23 @@
+[project]
+name = "accra-python3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.txt"
+authors = [
+    { name = "Rumen", email = "rumenmitov@disroot.org" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "accra-language",
+    "vermin>=1.8.0",
+]
+
+[project.scripts]
+accra-python3 = "accra_python3:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+accra-language = { git = "https://github.com/rumenmitov/accra-language" }
