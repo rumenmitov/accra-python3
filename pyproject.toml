@@ -21,3 +21,8 @@ build-backend = "uv_build"
 
 [tool.uv.sources]
 accra-language = { git = "https://github.com/rumenmitov/accra-language" }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
+]
